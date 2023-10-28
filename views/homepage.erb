@@ -1,0 +1,12 @@
+<body>
+    <h1>Currency pairs</h1>
+
+  <ul>
+    <% @currancy_array.each do |currancy| %>
+      <li>
+        <a href= <%= currancy[1] %> >
+        Convert 1 <%= currancy[0] %>...
+      </li>
+    <% end %>
+  </ul>
+</body>
